@@ -161,10 +161,10 @@ nav{
 /* main */
 .content{
   margin-top: 3.9043vw;
-  width: 89vw;
+  width: 91vw;
   /* border: 1px solid red; */
   position: relative;
-  margin-left: 5.5vw;
+  margin-left: 4.5vw;
   min-height: 10vw;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -181,7 +181,29 @@ nav{
   align-items: center;
 }
 
+.productBox::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  width: 20%;
+  height: 180%;
+  top: 1px;
+  bottom: 1px;
+  /* opacity: 0.2;  */
+  top:-120%;
+  left: 10%;
+  transition: 2s;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+.productBox:hover:before{
+  top:100%;
+  left:100%;
+}
+
 .productBox{
+  overflow: hidden;
   position: relative;
   width: 15.117vw;
   min-height: 5vw;
