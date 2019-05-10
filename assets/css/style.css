@@ -7,6 +7,10 @@
   font-family: 'NotoSans-Bold';
   src:url('../fonts/noto/NotoSans-Bold.ttf') format('truetype');
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 body{
   margin: 0;
@@ -38,6 +42,7 @@ nav{
 }
 
 .sellButton{
+  transition: 0.3s;
   box-shadow: 0px 0px 1.8vw 0px rgba(0,216,255,0.8);
   width: 3.269vw;
   height: 3.269vw;
@@ -46,6 +51,10 @@ nav{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.sellButton:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 1.9vw 3px rgba(0,216,255,0.8);
 }
 
 .sellButton img{
@@ -103,6 +112,10 @@ nav{
   width: 1.0736vw;
   height: 1.0736vw;
 }
+.linkedIn-icon{
+  width: 1.0747vw;
+  height: 1.0747vw;
+}
 
 .searchBox{
   position: relative;
@@ -147,6 +160,7 @@ nav{
 }
 
 .userIcon{
+  transition: 0.3s;
   width: 3.2698vw;
   height: 3.2698vw;
   box-shadow: 0px 0px 1.8vw 0px rgba(0,216,255,0.8);
@@ -157,6 +171,15 @@ nav{
   border-radius: 50%;
   margin-left: 0.878vw;
 }
+.userIcon:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 1.9vw 3px rgba(0,216,255,0.8);
+}
+.userIcon img{
+  width: 1.612vw;
+  height: 1.612vw;
+}
+
 
 /* main */
 .content{
@@ -307,14 +330,18 @@ nav{
   background-color: rgb(226,226,226);
   display: inline-block;
   width: auto;
-  padding: 0.2vw;
+  padding: 0.3vw;
+  padding-right: 0.5vw;
   font-family: 'NotoSans-Regular';
-  margin: 0.25vw;
+  margin: 0.3vw;
+  margin-bottom: 0.5vw;
   font-size: 0.77vw;
-  color: #736c6a;
+  color: #464241;
   transition-timing-function:ease-in;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
 }
 .tag:hover{
-  background-color: yellow;
+  background-color: rgb(255,164,10);
   cursor: pointer;
 }
