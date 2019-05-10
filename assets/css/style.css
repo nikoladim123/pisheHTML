@@ -320,28 +320,30 @@ nav{
 .itemTags{
   transition: 1s;
   width: 100%;
-  background-color: rgb(242,242,242);
+  /* background-color: rgb(242,242,242); */
   max-height: 0vw;
   overflow: hidden;
 }
 
 .tag{
-  transition: 0.6s;
-  background-color: rgb(226,226,226);
+  transition: 0.4s;
+  /* background-color: rgb(226,226,226); */
+  background-color: white;
+  border: 1px solid black;
   display: inline-block;
   width: auto;
   padding: 0.3vw;
   padding-right: 0.5vw;
   font-family: 'NotoSans-Regular';
-  margin: 0.3vw;
-  margin-bottom: 0.5vw;
+  margin: 5px;
+  margin-bottom: 8px;
   font-size: 0.77vw;
   color: #464241;
   transition-timing-function:ease-in;
-  border-top-right-radius: 2vw;
-  border-bottom-right-radius: 2vw;
+  /* border-top-right-radius: 2vw; */
+  /* border-bottom-right-radius: 2vw; */
 }
 .tag:hover{
-  background-color: rgb(255,164,10);
+  background-color: rgb(255,196,0);
   cursor: pointer;
 }
