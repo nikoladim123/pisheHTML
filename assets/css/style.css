@@ -259,8 +259,9 @@ nav{
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   text-align: center;
-  font-size: 1.1713vw;
+  font-size: 0.9775vw;
   font-family: 'NotoSans-Regular';
+  color: #736c6a;
 }
 
 .productPrice{
@@ -283,9 +284,11 @@ nav{
   background-color: rgb(226,226,226);
   display: inline-block;
   width: auto;
-  padding: 0.5vw;
+  padding: 0.2vw;
   font-family: 'NotoSans-Regular';
   margin: 0.25vw;
+  font-size: 0.72vw;
+  color: #736c6a;
 }
 .tag:hover{
   cursor: pointer;
