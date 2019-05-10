@@ -303,15 +303,18 @@ nav{
 }
 
 .tag{
+  transition: 0.6s;
   background-color: rgb(226,226,226);
   display: inline-block;
   width: auto;
   padding: 0.2vw;
   font-family: 'NotoSans-Regular';
   margin: 0.25vw;
-  font-size: 0.72vw;
+  font-size: 0.77vw;
   color: #736c6a;
+  transition-timing-function:ease-in;
 }
 .tag:hover{
+  background-color: yellow;
   cursor: pointer;
 }
