@@ -22,6 +22,9 @@ body{
   height: 12vw;
   z-index: 1;
 }
+#sellerImg:hover{
+  cursor: pointer;
+}
 
 #sellerTemplate{
   transition: 1s;
