@@ -16,6 +16,8 @@ body{
 
 .iconBox img{
   margin: 1vw;
+  padding: 1vw;
+  background: white;
 }
 
 .iconBox img:hover{
