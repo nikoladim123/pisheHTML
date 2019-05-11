@@ -178,7 +178,11 @@ nav{
   font-size: 1.1713vw;
 }
 .logreg a{
+  transition: 0.3s;
   position: relative;
+}
+.logreg a:hover{
+  color: rgb(255,196,0);
 }
 
 .buyerSellerBox{
