@@ -34,6 +34,25 @@ nav{
   bottom:  0.5856vw;
 }
 
+#sellerOnly{
+  transition: 1s;
+  overflow: hidden;
+  position: absolute;
+  width: 12.56vw;
+  height: 0;
+  bottom: 0;
+  z-index: 1;
+  /* padding: 1vw; */
+  background: white;
+}
+
+#sellerOnly img{
+  margin: 1vw;
+  width: 10.731vw;
+  height: 10.6341vw;
+}
+
+
 .sellSomething p{
   color: white;
   font-family: 'NotoSans-Regular';
@@ -158,6 +177,28 @@ nav{
   display: flex;
   font-size: 1.1713vw;
 }
+.logreg a{
+  position: relative;
+}
+
+.buyerSellerBox{
+  transition: 1s;
+  overflow: hidden;
+  position: absolute;
+  /* border: 1px solid red; */
+  bottom: 0vw;
+  left: -20vw;
+  height: 0vw;
+  width: auto;
+  display: flex;
+  z-index: 2;
+  background-color: white;
+}
+.buyerSellerBox img{
+  margin: 1vw;
+  width: 10.731vw;
+  height: 10.6341vw;
+}
 
 .userIcon{
   transition: 0.3s;
@@ -218,7 +259,7 @@ nav{
   left: 10%;
   transition: 2s;
   transform: rotate(45deg);
-  z-index: 5;
+  z-index: 1;
 }
 .productBox:hover:before{
   top:100%;
