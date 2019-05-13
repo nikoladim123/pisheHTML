@@ -148,10 +148,49 @@ nav{
   border: 0.39vw solid white;
   box-shadow: inset 0px 0px 2px 1px rgba(199,197,208);
   background-color: rgb(223,220,233);
+  display: flex;
+  align-items: center;
+}
+.locationIcon{
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  width: 1.171vw;
+  height: 1.757vw;
+}
+.selectCountry{
+  height: 100%;
+  min-width: 6.347vw;
+  border: none;
+  background: rgb(223,220,233);
+  font-size: 1.2vw;
+  /* font-family: 'NotoSans-Regular'; */
+}
+.searchInput{
+  background: rgb(223,220,233);
+  width: 31.226vw;
+  height: 0.8718vw;
+  padding-top: 0.3vw;
+  border: none;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding-left: 1vw;
+  font-size: 0.8789vw;
+}
+
+input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
+    color: black;
+    font-size: 0.8789vw;
+    opacity: 0.4;
+}
+.searchIcon{
+  width: 1.953vw;
+  height: 1.953vw;
+  margin-left: 1.8vw;
+  margin-top: 0.2vw;
 }
 
 .logInRegister{
-  font-family: 'NotoSans-Bold';
+  font-family: 'NotoSans-Regular';
   color: white;
   /* border: 1px solid red; */
   position: absolute;
