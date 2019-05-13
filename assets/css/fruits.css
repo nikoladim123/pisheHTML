@@ -182,11 +182,16 @@ input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
     font-size: 0.8789vw;
     opacity: 0.4;
 }
+
+
 .searchIcon{
   width: 1.953vw;
   height: 1.953vw;
   margin-left: 1.8vw;
   margin-top: 0.2vw;
+}
+.searchIconAnchor{
+  width: 7.4vw;
 }
 
 .logInRegister{
