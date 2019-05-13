@@ -187,8 +187,9 @@ input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
 .searchIcon{
   width: 1.953vw;
   height: 1.953vw;
-  margin-left: 1.8vw;
+  margin-right: 0.5vw;
   margin-top: 0.2vw;
+  float: right;
 }
 .searchIconAnchor{
   width: 7.4vw;
