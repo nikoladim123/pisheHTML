@@ -327,10 +327,10 @@ main{
 /* main */
 .content{
   margin-top: 1.46vw;
-  width: 91vw;
+  width: 91.5vw;
   /* border: 1px solid red; */
   position: relative;
-  margin-left: 4.5vw;
+  margin-left: 4vw;
   min-height: 10vw;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
