@@ -15,51 +15,24 @@ for (var i = 0; i < productBox.length; i++) {
     e.target.childNodes[1].childNodes[5].style.bottom = '-2.5vw';
   });
 }
-// registration
+
+// register drop down
+// register drop down
+// register drop down
+var iconBox = document.getElementsByClassName('iconBox')[0];
 var register = document.getElementById('register');
-var buyerSellerBox = document.getElementById('buyerSellerBox');
+var closeBox = document.getElementsByClassName('closeBox')[0];
 
-register.addEventListener('mouseenter',()=>{
-  buyerSellerBoxShow();
-  console.log('enter');
-});
 
-register.addEventListener('mouseleave',()=>{
-  buyerSellerBoxHide();
-  console.log('leave');
-});
+register.addEventListener('click',(e)=>{
+  e.preventDefault();
+  iconBox.style.height = '100vh';
+  iconBox.style.opacity = '1';
+  iconBox.style.filter = 'blur(0px)'
+})
 
-function buyerSellerBoxShow() {
-  buyerSellerBox.style.height = "13vw";
-  buyerSellerBox.style.bottom = "-13vw";
-}
-
-function buyerSellerBoxHide() {
-  buyerSellerBox.style.height = "0vw";
-  buyerSellerBox.style.bottom = "0vw";
-}
-
-// sellSomething sellerOnly
-
-var sellSomething = document.getElementById('sellSomething');
-var sellerOnly = document.getElementById('sellerOnly');
-
-sellSomething.addEventListener('mouseenter',()=>{
-  SellerBoxShow();
-  console.log('enter');
-});
-
-sellSomething.addEventListener('mouseleave',()=>{
-  SellerBoxHide();
-  console.log('leave');
-});
-
-function SellerBoxShow() {
-  sellerOnly.style.height = "12.56vw";
-  sellerOnly.style.bottom = "-13vw";
-}
-
-function SellerBoxHide() {
-  sellerOnly.style.height = "0vw";
-  sellerOnly.style.bottom = "0vw";
-}
+closeBox.addEventListener('click',(e)=>{
+  iconBox.style.height = '0vh';
+  iconBox.style.opacity = '0';
+  iconBox.style.filter = 'blur(10px)'
+})
