@@ -345,6 +345,8 @@ main h3{
 }
 .colOneHolder{
   width: 16.6vw;
+  background: white;
+  height: 55vh;
 }
 
 .col{
