@@ -1,12 +1,20 @@
 @font-face {
+  font-family: 'NotoSans-Light';
+  src:url('../fonts/noto/NotoSans-Light.ttf') format('truetype');
+}
+@font-face {
   font-family: 'NotoSans-Regular';
   src:url('../fonts/noto/NotoSans-Regular.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'NotoSans-Bold';
   src:url('../fonts/noto/NotoSans-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'NotoSans-Black';
+  src:url('../fonts/noto/NotoSans-Black.ttf') format('truetype');
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -278,14 +286,49 @@ h2{
   height: 1.612vw;
 }
 
+main h1{
+  text-align: center;
+  font-family: 'NotoSans-Light';
+  font-weight: 100;
+  font-size: 2.6855vw;
+  color: rgb(51,51,51);
+  margin-top: 3.3691vw;
+  margin-bottom: 2.0507vw;
+}
+main h1 span{
+  color: rgb(203,99,20);
+}
+
+main h3{
+  margin: 0;
+  font-family: 'NotoSans-Light';
+  font-size: 1.4648vw;
+  color: rgb(98,98,106);
+  margin-left: 5vw;
+}
+.bold{
+  font-family: 'NotoSans-Black';
+}
+.changeLocation{
+  color: rgb(203,99,20);
+  font-size: 0.976vw;
+}
+.changeLocation:hover{
+  cursor: pointer;
+}
+
+main{
+  padding: 0.1px;
+  background: linear-gradient(to bottom, rgba(216,213,228,0.97) 0%, rgba(247,247,247,0.99) 60%, rgba(247,247,247,1) 100%);
+}
 
 /* main */
 .content{
-  margin-top: 3.9043vw;
+  margin-top: 1.46vw;
   width: 91vw;
   /* border: 1px solid red; */
   position: relative;
-  margin-left: 4.5vw;
+  margin-left: 3.5vw;
   min-height: 10vw;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -324,9 +367,10 @@ h2{
 }
 
 .productBox{
+  transition: 0.4s;
   overflow: hidden;
   position: relative;
-  width: 15.117vw;
+  width: 16.6vw;
   min-height: 5vw;
   background: white;
   margin-bottom: 2.04978vw;
@@ -334,6 +378,10 @@ h2{
   margin-right: 0.5vw;
   padding: 0.5vw;
 }
+.productBox:hover{
+  box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.2);
+}
+
 .productImageDiv{
   overflow: hidden;
   position: relative;
@@ -341,6 +389,7 @@ h2{
 }
 .productImage{
   width: 100%;
+  height: 21.484vw;
 }
 .imgShareLikeCallDiv{
   transition: 0.5s;
