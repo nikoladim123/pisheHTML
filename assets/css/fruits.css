@@ -163,7 +163,6 @@ nav{
   border: none;
   background: rgb(223,220,233);
   font-size: 1.2vw;
-  /* font-family: 'NotoSans-Regular'; */
 }
 .searchInput{
   background: rgb(223,220,233);
@@ -177,7 +176,7 @@ nav{
   font-size: 0.8789vw;
 }
 
-input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
+input[type="text"]::placeholder {
     color: black;
     font-size: 0.8789vw;
     opacity: 0.4;
@@ -360,7 +359,7 @@ main h3{
   font-family: 'NotoSans-Light';
   font-size: 1.4648vw;
   color: #736c6a;
-  margin-left: 5vw;
+  margin-left: 22.3vw;
 }
 .bold{
   font-family: 'NotoSans-Black';
