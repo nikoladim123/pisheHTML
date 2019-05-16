@@ -555,9 +555,14 @@ main{
   padding-bottom: 1vw;
 }
 
-.sellerCard{
-  transition: 0.3s;
-  width: 2.5vw;
+.sellerCard {
+    transition: 0.3s;
+    width: 2.5vw;
+    padding-left: 50%;
+    padding-top: 0.5vw;
+    padding-right: 50%;
+    padding-bottom: 0.2vw;
+    background: rgba(0,0,0,0.3);
 }
 .sellerCard:hover{
   filter: brightness(130%);
