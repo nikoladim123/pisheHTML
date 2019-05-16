@@ -52,7 +52,9 @@ var socialMediaDropDown = document.getElementsByClassName('socialMediaDropDown')
 
 imgShareLikeCallDivIcon.addEventListener('mouseenter',()=>{
   socialMediaDropDown.style.display ='flex';
-  socialMediaDropDown.style.opacity = '1';
+  setTimeout(function () {
+    socialMediaDropDown.style.opacity = '1';
+  }, 1000);
 });
 
 imgShareLikeCallDivIcon.addEventListener('mouseleave',()=>{
