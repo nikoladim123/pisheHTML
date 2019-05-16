@@ -574,3 +574,40 @@ main{
   background-color: rgb(255,196,0);
   cursor: pointer;
 }
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+@media (orientation:portrait) {
+  .content>.col:nth-child(1){
+    display: none;
+  }
+  .content{
+    grid-template-columns:auto auto;
+  }
+  .breadCrumbs{
+    font-size: 2.5vw;
+  }
+
+  main h3 {
+    margin-left: 0;
+    font-size: 3.7648vw;
+    text-align: center;
+  }
+  .changeLocation{
+    font-size: 2.47vw;
+  }
+  .productBox{
+    width: 40vw;
+    margin-top: 4vw;
+  }
+  .productImage{
+    height: 52vw;
+  }
+  .itemDescriptionText{
+    font-size: 2.77vw;
+  }
+  .productPrice{
+    font-size: 2.871vw;
+  }
+}
