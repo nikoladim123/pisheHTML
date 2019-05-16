@@ -460,23 +460,46 @@ main{
 }
 .imgShareLikeCallDiv img{
   transition: 0.3s;
-  opacity: 0.5;
 }
 .imgShareLikeCallDiv img:hover{
-  opacity: 1;
+  /* opacity: 1; */
   cursor: pointer;
 }
 .share-icon{
   width: 2.248vw;
   height: 2.1994vw;
+  opacity: 0.5;
+}
+.share-icon:hover{
+  opacity: 1
 }
 .call-icon{
   width: 1.466vw;
   height: 1.466vw;
+  opacity: 0.5;
+}
+.call-icon:hover{
+  opacity: 1
 }
 .love{
   width: 1.71vw;
   height: 1.564vw;
+  /* opacity: 0.5; */
+}
+.love:hover{
+  /* opacity: 1 */
+}
+.loveEmpty{
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.loveEmpty:hover{
+  opacity: 1;
+}
+.loveFull{
+  position: absolute;
+  opacity: 0;
 }
 .imgShareLikeCallDivIcon{
   background: rgba(0,0,0,0.55);
@@ -487,26 +510,57 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.socialMediaDropDown {
+  transition: 0.5s;
+  height: 1.22vw;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5vw;
+  left: 0;
+  width: 6.5vw;
+  bottom: -2.3vw;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  display: none;
 }
 
 .clientRatingBox{
   transition: 0.5s;
   position: absolute;
-  bottom: -2.5vw;
+  bottom: -6.5vw;
   left: 0;
   width: 100%;
-  height: 2.4914vw;
+  height: 6.5vw;
   background-color: rgba(0,0,0,0.6);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .clientRatingBox:hover{
   cursor: pointer;
 }
-.clientRatingBox img{
+.clientRatingBox p{
+  margin: 0.2vw;
+  color: white;
+  font-family: 'NotoSans-Regular';
+}
+.sellerRating{
   width: 7.62vw;
   height: 1.123vw;
+  padding-bottom: 1vw;
+}
+
+.sellerCard{
+  transition: 0.3s;
+  width: 2.5vw;
+}
+.sellerCard:hover{
+  filter: brightness(130%);
 }
 
 .itemDescription{
