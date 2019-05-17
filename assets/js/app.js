@@ -16,6 +16,7 @@ for (var i = 0; i < productBox.length; i++) {
   });
 }
 
+
 // register drop down
 // register drop down
 // register drop down
@@ -44,6 +45,7 @@ var loveFull = document.getElementById('loveFull');
 loveFullContainer.addEventListener('click',()=>{
   loveFull.style.opacity = '1';
 })
+
 
 // share icon socialMediaDropDown
 var imgShareLikeCallDivIcon = document.getElementsByClassName('imgShareLikeCallDivIcon')[0];
