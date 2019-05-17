@@ -12,7 +12,7 @@ for (var i = 0; i < categoryList.length; i++) {
   categoryList[i].addEventListener('click',(e)=>{
     console.log(e.target.childNodes);
     if(e.target.dataset.swich === '0'){
-      e.target.childNodes[1].childNodes[0].style.transform = 'rotate(0deg)';
+      e.target.childNodes[1].childNodes[0].style.transform = 'rotate(90deg)';
       e.target.childNodes[3].style.maxHeight = '10vw';
       e.target.dataset.swich = 1;
     }else{
