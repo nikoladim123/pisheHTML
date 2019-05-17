@@ -528,6 +528,7 @@ main{
   justify-content: space-around;
   opacity: 0;
   display: none;
+  outline: 1.5vw solid transparent;
 }
 
 .clientRatingBox{
