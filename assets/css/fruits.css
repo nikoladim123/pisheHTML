@@ -461,9 +461,21 @@ main h3{
   cursor: pointer;
 }
 .ListNormal{
-  list-style-image: url('../images/bulletStyle.jpg');
+  /* list-style-image: url('../images/bulletStyle.jpg'); */
   /* list-style-type: disc; */
   font-family: 'NotoSans-Regular';
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ListNormal::before{
+  content: '';
+  display: inline-block;
+  background: rgb(98,91,220);
+  width: 0.26vw;
+  height: 0.26vw;
+  border-radius: 50%;
+  margin-right: 0.3vw;
 }
 
 .catArrow{
