@@ -471,6 +471,7 @@ main h3{
   float: right;
   position: relative;
   right: 1vw;
+  pointer-events: none
 }
 .catArrow span{
   transition: 0.3s;
