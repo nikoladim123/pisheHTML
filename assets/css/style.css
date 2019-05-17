@@ -41,7 +41,7 @@ nav{
   display: flex;
   align-items: center;
   position: absolute;
-  left: 6.881vw;
+  left: 4.6vw;
   bottom:  0.5856vw;
 }
 
@@ -209,7 +209,7 @@ input[type="text"]::placeholder {
   color: white;
   /* border: 1px solid red; */
   position: absolute;
-  right: 5vw;
+  right: 4.6vw;
   bottom:  0.5856vw;
   width: auto;
   height: auto;
@@ -484,6 +484,7 @@ main{
 .love{
   width: 1.71vw;
   height: 1.564vw;
+  pointer-events: none;
   /* opacity: 0.5; */
 }
 .love:hover{
@@ -492,6 +493,7 @@ main{
 .loveEmpty{
   z-index: 1;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .loveEmpty:hover{

@@ -39,25 +39,43 @@ closeBox.addEventListener('click',(e)=>{
 })
 
 // loveFull click
-var loveFullContainer = document.getElementById('loveFullContainer');
-var loveFull = document.getElementById('loveFull');
+var imgShareLikeCallDivIcon = document.getElementsByClassName('imgShareLikeCallDivIcon');
+var love = document.getElementsByClassName('love');
 
-loveFullContainer.addEventListener('click',()=>{
-  loveFull.style.opacity = '1';
-})
+for (var i = 0; i < imgShareLikeCallDivIcon.length; i++) {
+  imgShareLikeCallDivIcon[i].addEventListener('click',(e)=>{
+    e.target.childNodes[3].style.opacity = '1';
+  })
+}
+
 
 
 // share icon socialMediaDropDown
-var imgShareLikeCallDivIcon = document.getElementsByClassName('imgShareLikeCallDivIcon')[0];
+// var imgShareLikeCallDivIcon = document.getElementsByClassName('imgShareLikeCallDivIcon')[0];
 var socialMediaDropDown = document.getElementsByClassName('socialMediaDropDown')[0];
 
+for (var i = 0; i < imgShareLikeCallDivIcon.length; i++) {
+  imgShareLikeCallDivIcon[i].addEventListener('mouseenter',(e)=>{
+    e.target.childNodes[3].style.display ='flex';
+    e.target.childNodes[3].style.opacity = '1';
+    console.log(e.target.childNodes);
+  });
 
-imgShareLikeCallDivIcon.addEventListener('mouseenter',()=>{
+  imgShareLikeCallDivIcon[i].addEventListener('mouseleave',(e)=>{
+    e.target.childNodes[3].style.opacity = '0';
+    setTimeout(function () {
+      e.target.childNodes[3].style.display ='none';
+    }, 300);
+  });
+}
+
+
+imgShareLikeCallDivIcon[0].addEventListener('mouseenter',()=>{
   socialMediaDropDown.style.display ='flex';
   socialMediaDropDown.style.opacity = '1';
 });
 
-imgShareLikeCallDivIcon.addEventListener('mouseleave',()=>{
+imgShareLikeCallDivIcon[0].addEventListener('mouseleave',()=>{
   socialMediaDropDown.style.opacity = '0';
   setTimeout(function () {
     socialMediaDropDown.style.display ='none';

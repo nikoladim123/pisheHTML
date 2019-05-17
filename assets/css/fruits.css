@@ -43,7 +43,7 @@ nav{
   display: flex;
   align-items: center;
   position: absolute;
-  left: 6.881vw;
+  left: 4.6vw;
   bottom:  0.5856vw;
 }
 
@@ -202,7 +202,7 @@ input[type="text"]::placeholder {
   color: white;
   /* border: 1px solid red; */
   position: absolute;
-  right: 5vw;
+  right: 4.6vw;
   bottom:  0.5856vw;
   width: auto;
   height: auto;
@@ -483,7 +483,7 @@ main h3{
   float: right;
   position: relative;
   right: 1vw;
-  pointer-events: none
+  pointer-events: none;
 }
 .catArrow span{
   transition: 0.3s;
