@@ -1,21 +1,31 @@
 var categoryList = document.getElementsByClassName('categoryList');
+var catArrowSpan = document.getElementsByClassName('catArrowSpan');
 
 // console.log(categoryList[0].childNodes[1]);
 
 for (var i = 0; i < categoryList.length; i++) {
   console.log(categoryList[i]);
   categoryList[i].addEventListener('click',(e)=>{
-    closeAllCategoryAccordium()
+    closeAllCategoryAccordium();
   });
 
   categoryList[i].addEventListener('click',(e)=>{
-    e.target.childNodes[1].style.maxHeight = '10vw';
+    console.log(e.target.childNodes);
+    if(e.target.dataset.swich === '0'){
+      e.target.childNodes[1].childNodes[0].style.transform = 'rotate(0deg)';
+      e.target.childNodes[3].style.maxHeight = '10vw';
+      e.target.dataset.swich = 1;
+    }else{
+      e.target.dataset.swich = 0;
+    }
+
   });
 }
 
 function closeAllCategoryAccordium() {
   for (var i = 0; i < categoryList.length; i++) {
-    categoryList[i].childNodes[1].style.maxHeight = '0vw';
+    catArrowSpan[i].style.transform = "rotate(-90deg)";
+    categoryList[i].childNodes[3].style.maxHeight = '0vw';
   }
 }
 

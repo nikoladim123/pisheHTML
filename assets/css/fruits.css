@@ -441,6 +441,10 @@ main h3{
 }
 .categoryList{
 }
+.categoryList a{
+  color: rgb(85,85,85);
+  text-decoration: none;
+}
 .categoryList:hover{
   cursor: pointer;
 }
@@ -458,8 +462,22 @@ main h3{
 }
 .ListNormal{
   list-style-image: url('../images/bulletStyle.jpg');
+  /* list-style-type: disc; */
   font-family: 'NotoSans-Regular';
 }
+
+.catArrow{
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 1vw;
+}
+.catArrow span{
+  transition: 0.3s;
+  display: block;
+  transform: rotate(-90deg);
+}
+
 
 .col{
   display: flex;
