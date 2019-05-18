@@ -83,6 +83,48 @@
         <div class="col">
           <div class="colOneHolder">
 
+            <div class="lists">
+
+              <form class="categorySearchForm" action="index.html" method="post">
+                <input type="text" name="" value="" placeholder="Search">
+                <button type="submit" name="button"></button>
+              </form>
+
+              <ul class="ULparent">
+
+                <li data-swich="0" class="categoryList">Category One <div class="catArrow"><span class="catArrowSpan">&#x276E;</span> </div>
+                  <ul class="unorderedList">
+                    <li class="ListNormal"><a href="#">Product One</a> </li>
+                    <li class="ListNormal"><a href="#">Product Two</a> </li>
+                    <li class="ListNormal"><a href="#">Product Three</a> </li>
+                    <li class="ListNormal"><a href="#">Product Four</a> </li>
+                    <li class="ListNormal"><a href="#">Product Five</a> </li>
+                  </ul>
+                </li>
+
+                <li data-swich="0" class="categoryList">Category Two <div class="catArrow"><span class="catArrowSpan">&#x276E;</span> </div>
+                  <ul class="unorderedList">
+                    <li class="ListNormal"><a href="#">Product One</a></li>
+                    <li class="ListNormal"><a href="#">Product Two</a></li>
+                    <li class="ListNormal"><a href="#">Product Three</a></li>
+                    <li class="ListNormal"><a href="#">Product Four</a></li>
+                    <li class="ListNormal"><a href="#">Product Five</a></li>
+                  </ul>
+                </li>
+
+                <li data-swich="0" class="categoryList">Category Three <div class="catArrow"><span class="catArrowSpan">&#x276E;</span> </div>
+                  <ul class="unorderedList">
+                    <li class="ListNormal"><a href="#">Product One</a></li>
+                    <li class="ListNormal"><a href="#">Product Two</a></li>
+                    <li class="ListNormal"><a href="#">Product Three</a></li>
+                    <li class="ListNormal"><a href="#">Product Four</a></li>
+                    <li class="ListNormal"><a href="#">Product Five</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+
           </div>
         </div>
 
@@ -93,18 +135,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\boots.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -114,16 +167,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -132,18 +185,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\greenJacket.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -153,16 +217,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -176,56 +240,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\orangeJacket.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
-                </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="call-icon" src="assets\images\call-icon.png" alt="">
-                </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
-                </div>
-              </div>
-              <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
-              </div>
-            </div>
-            <div class="itemDescription">
-              <p class="itemDescriptionText" >Lorem isspsum Lorem ipsum Lorem  Lorem ipsum</p>
-              <p class="productPrice">$ 75.00</p>
-            </div>
-            <div class="itemTags">
-              <div class="tag">
-                TAG
-              </div>
-              <div class="tag">
-                TAGTAGTAG
-              </div>
-              <div class="tag">
-                TAGTAGTAG
-              </div>
-              <div class="tag">
-                TAGTAG
-              </div>
-            </div>
-          </div>
 
-          <div class="productBox">
-            <div class="productImageDiv">
-              <img class="productImage" src="assets\images\mens\redJacket.jpg" alt="">
-              <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="share-icon" src="assets\images\share.png" alt="">
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -235,16 +272,66 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
+              </div>
+            </div>
+          </div>
+
+          <div class="productBox">
+            <div class="productImageDiv">
+              <img class="productImage" src="assets\images\mens\redJacket.jpg" alt="">
+              <div class="imgShareLikeCallDiv">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
+                  <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
+                </div>
+                <div class="imgShareLikeCallDivIcon">
+                  <img class="call-icon" src="assets\images\call-icon.png" alt="">
+                </div>
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
+                </div>
+              </div>
+              <div class="clientRatingBox">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
+              </div>
+            </div>
+            <div class="itemDescription">
+              <!-- <img class="stars" src="assets\images\productImages\stars.jpg" alt=""> -->
+              <p class="itemDescriptionText" >Lorem isspsum Lorem ipsum Lorem  Lorem ipsum</p>
+              <p class="productPrice">$ 75.00</p>
+            </div>
+            <div class="itemTags">
+              <div class="tag">
+                WATCH
+              </div>
+              <div class="tag">
+                GOLD
+              </div>
+              <div class="tag">
+                WRIST
+              </div>
+              <div class="tag">
+                JEWELERY
               </div>
             </div>
           </div>
@@ -258,18 +345,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\shoes.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -279,16 +377,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -297,18 +395,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\watch.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -318,16 +427,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -341,18 +450,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\watchTwo.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -362,16 +482,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -380,18 +500,29 @@
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\mens\wtf.jpg" alt="">
               <div class="imgShareLikeCallDiv">
-                <div class="imgShareLikeCallDivIcon">
+                <div class="imgShareLikeCallDivIcon shareDropDown">
                   <img class="share-icon" src="assets\images\share.png" alt="">
+
+                    <div class=" socialMediaDropDown">
+                      <img class="fb-icon" src="assets\images\fb-icon.png" alt="">
+                      <img class="twitter-icon" src="assets\images\twitter-icon.png" alt="">
+                      <img class="instagram-icon" src="assets\images\instagram-icon.png" alt="">
+                      <img class="linkedIn-icon" src="assets\images\linkedIn-icon.png" alt="">
+                    </div>
+
                 </div>
                 <div class="imgShareLikeCallDivIcon">
                   <img class="call-icon" src="assets\images\call-icon.png" alt="">
                 </div>
-                <div class="imgShareLikeCallDivIcon">
-                  <img class="love" src="assets\images\love.png" alt="">
+                <div id="loveFullContainer" class="imgShareLikeCallDivIcon">
+                  <img class="love loveEmpty" src="assets\images\love.png" alt="">
+                  <img id="loveFull" class="love loveFull" src="assets\images\loveFull.png" alt="">
                 </div>
               </div>
               <div class="clientRatingBox">
-                <img src="assets\images\clientRating.png" alt="client rating">
+                <p>Seller rating</p>
+                <img class="sellerRating" src="assets\images\clientRating.png" alt="client rating">
+                <img class="sellerCard" src="assets\images\card.png" alt="shoping cart">
               </div>
             </div>
             <div class="itemDescription">
@@ -401,16 +532,16 @@
             </div>
             <div class="itemTags">
               <div class="tag">
-                TAG
+                WATCH
               </div>
               <div class="tag">
-                TAGTAGTAG
+                GOLD
               </div>
               <div class="tag">
-                TAGTAGTAG
+                WRIST
               </div>
               <div class="tag">
-                TAGTAG
+                JEWELERY
               </div>
             </div>
           </div>
@@ -423,5 +554,6 @@
     </main>
 
     <script src="assets/js/app.js" charset="utf-8"></script>
+    <script src="assets/js/product.js" charset="utf-8"></script>
   </body>
 </html>
