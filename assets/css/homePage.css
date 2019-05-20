@@ -365,7 +365,8 @@ main h1{
 }
 main h1 span{
   font-size: 1.7569vw;
-  font-family: 'NotoSans-Regular';
+  font-family: 'NotoSans-regular';
+  font-weight: 100;
 }
 
 .container{
@@ -382,7 +383,7 @@ main h1 span{
   position: relative;
   width: 54.075vw;
   height: 29.86vw;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .mainCarouselContainer img{
   position: absolute;
