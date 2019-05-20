@@ -23,7 +23,6 @@ a{
 body{
   position: relative;
   margin: 0;
-  background-color: rgb(233,233,234);
 }
 
 nav{
@@ -354,7 +353,7 @@ h2{
 /* main */
 main{
   padding: 0.1px;
-  background: linear-gradient(to bottom, rgba(216,213,228,0.97) 0%, rgba(247,247,247,0.99) 60%, rgba(247,247,247,1) 100%);
+  /* background: linear-gradient(to bottom, rgba(216,213,228,0.97) 0%, rgba(247,247,247,0.99) 60%, rgba(247,247,247,1) 100%); */
 }
 main h1{
   color: white;
@@ -375,7 +374,7 @@ main h1 span{
   /* border: 1px solid red; */
   display: flex;
   align-items:  flex-start;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 
@@ -631,10 +630,10 @@ main h1 span{
   cursor: pointer;
 }
 
-/* homepage */
+/* left slider */
 .leftSliderBox{
+  margin-right: 1.61vw;
   position: relative;
-  /* border: 2px solid green; */
   width: 16.6vw;
   height:
 }
@@ -654,11 +653,26 @@ main h1 span{
   top:1vw;
 }
 
-
+/* right slider */
 .rightSliderBox{
+  margin-left: 1.61vw;
   position: relative;
   /* border: 2px solid blue; */
   width: 16.6vw;
+}
+.rightSliderBox>div:nth-child(1){
+  top: 0;
+  left: 1vw;
+  width: 14.5vw;
+}
+.rightSliderBox>div:nth-child(2){
+  left: 0.5vw;
+  top: 0.5vw;
+  width: 15.5vw;
+}
+.rightSliderBox>div:nth-child(3){
+  left: 0;
+  top:1vw;
 }
 
 .nextButton {
