@@ -174,3 +174,48 @@ function deleteLastImageTwo() {
 function opacityLastImageTwo() {
   rightSliderBox.children[2].style.opacity = '0';
 }
+
+
+// main carousel
+// main carousel
+// main carousel
+// main carousel
+// main carousel
+var mainCarImage = document.getElementsByClassName('mainCarImage');
+// var flashDiv = document.getElementsByClassName('flashDiv');
+var leftCarArrowBox = document.getElementsByClassName('leftCarArrowBox');
+var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox');
+
+leftCarArrowBox[0].addEventListener('click',()=>{
+  mainSlidBackBut();
+});
+
+rightCarArrowBox[0].addEventListener('click',()=>{
+  mainSlidFun();
+});
+
+
+var mainSlidMod = 100;
+function mainSlidFun() {
+  if (mainSlidMod % 2 === 0) {
+    mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%9 +'.jpg';
+    mainCarImage[0].style.opacity = '0';
+    mainCarImage[1].style.opacity = '1';
+  }else{
+    mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%9 +'.jpg';
+    mainCarImage[0].style.opacity = '1';
+    mainCarImage[1].style.opacity = '0';
+  }
+  mainSlidMod++;
+}
+
+function mainSlidBackBut() {
+  // if(mainSlidMod > 1){
+    mainSlidMod-=2;
+    mainSlidFun();
+  // }
+}
+
+setInterval(function () {
+  mainSlidFun();
+}, 3000);
