@@ -456,6 +456,15 @@ main h3{
   font-family: 'NotoSans-Black';
   max-height: 0vw;
   overflow: hidden;
+  padding-left: 0vw;
+}
+.unorderedList li{
+  transition: 0.3s;
+  width: 100%;
+  padding-left: 1vw;
+}
+.unorderedList li:hover{
+  background-color: rgba(98,91,220,0.3);
 }
 .unorderedList:hover{
   cursor: pointer;
