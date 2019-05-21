@@ -198,14 +198,18 @@ rightCarArrowBox[0].addEventListener('click',()=>{
 var mainSlidMod = 100;
 function mainSlidFun() {
   if (mainSlidMod % 2 === 0) {
+    hOneFunHide()
     mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
     setTimeout(function () {
       mainCarImage[0].style.opacity = '0';
       mainCarImage[1].style.opacity = '1';
+      hOneFun();
     }, 300);
   }else{
     mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
+    hOneFunHide()
     setTimeout(function () {
+      hOneFun();
       mainCarImage[0].style.opacity = '1';
       mainCarImage[1].style.opacity = '0';
     }, 300);
@@ -229,6 +233,12 @@ setInterval(function () {
 var hOne = document.getElementById('hOne');
 function hOneFun() {
   hOne.style.marginTop = '6.149vw'
+  hOne.style.opacity = '1';
+}
+
+function hOneFunHide() {
+  hOne.style.marginTop = '7vw'
+  hOne.style.opacity = '0';
 }
 
 window.onload = ()=>{
