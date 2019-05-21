@@ -199,12 +199,16 @@ var mainSlidMod = 100;
 function mainSlidFun() {
   if (mainSlidMod % 2 === 0) {
     mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
-    mainCarImage[0].style.opacity = '0';
-    mainCarImage[1].style.opacity = '1';
+    setTimeout(function () {
+      mainCarImage[0].style.opacity = '0';
+      mainCarImage[1].style.opacity = '1';
+    }, 300);
   }else{
     mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
-    mainCarImage[0].style.opacity = '1';
-    mainCarImage[1].style.opacity = '0';
+    setTimeout(function () {
+      mainCarImage[0].style.opacity = '1';
+      mainCarImage[1].style.opacity = '0';
+    }, 300);
   }
   mainSlidMod++;
   console.log('i runed');
