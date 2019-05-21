@@ -207,6 +207,7 @@ function mainSlidFun() {
     mainCarImage[1].style.opacity = '0';
   }
   mainSlidMod++;
+  console.log('i runed');
 }
 
 function mainSlidBackBut() {
