@@ -11,6 +11,10 @@
   src:url('../fonts/noto/NotoSans-Bold.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'NotoSans-ExtraBold';
+  src:url('../fonts/noto/NotoSans-ExtraBold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'NotoSans-Black';
   src:url('../fonts/noto/NotoSans-Black.ttf') format('truetype');
 }
@@ -285,7 +289,7 @@ input[type="text"]::placeholder {
   height: 0vh;
   opacity: 0;
   filter: blur(10px);
-  z-index: 1;
+  z-index: 2;
 }
 
 .iconBox img{
@@ -299,7 +303,7 @@ input[type="text"]::placeholder {
   cursor: pointer;
 }
 
-h2{
+.iconBox h2{
   margin-top: 3vw;
   font-weight: 100;
   font-family: 'NotoSans-Regular';
@@ -356,19 +360,53 @@ main{
   padding: 0.1px;
   /* background: linear-gradient(to bottom, rgba(216,213,228,0.97) 0%, rgba(247,247,247,0.99) 60%, rgba(247,247,247,1) 100%); */
 }
-main h1{
+.mainCarouselContainer h1{
   color: white;
   font-family: 'NotoSans-Bold';
   font-size: 2.9282vw;
   position: relative;
   margin-top: 6.149vw;
   margin-left: 2.342vw;
+  display: inline;
 }
-main h1 span{
+.mainCarouselContainer h2{
+  display: inline;
+  color: white;
   font-size: 1.7569vw;
   font-family: 'NotoSans-regular';
   font-weight: 100;
 }
+/* main h1 span{
+  font-size: 1.7569vw;
+  font-family: 'NotoSans-regular';
+  font-weight: 100;
+} */
+/* test */
+.center{
+  position: absolute;
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 10vw;
+    padding-top: 5vw;
+    opacity: 0;
+}
+
+.char{
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+/* test end*/
 
 .container{
   padding-top: 1.1713vw;
@@ -722,7 +760,7 @@ main h1 span{
 
 .nextButton {
   transition: 0.3s;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     height: 3vw;
     width: 3vw;
@@ -743,8 +781,131 @@ main h1 span{
   opacity: 1;
   cursor: pointer;
 }
+.leftNextButton{
+  right: auto;
+  left: 0;
+}
+/* truck and other icons */
+.flexIcons{
+  margin-top: 1.4648vw;
+  display: flex;
+  justify-content: center;
+}
+.threeIcons{
+  margin-left: 5.3vw;
+  margin-right: 5.3vw;
+}
+.threeIcons p{
+  font-size: 0.8789vw;
+  text-align: center;
+  font-family: 'NotoSans-Light';
+}
+/* whatIsLorem */
+.whatIsLorem{
+  padding: 0.1px;
+  margin-top: 5.273vw;
+  height: 15.234vw;
+  background-color: rgb(243,243,243);
+}
+.whatIsLorem h2{
+  text-align: center;
+  font-size: 2.3437vw;
+  font-family: 'NotoSans-Regular';
+  color: black;
+  margin-top:2.685vw;
+  margin-bottom: 0.83vw;
+}
+.whatIsLorem p{
+  margin: 0;
+  text-align: center;
+  font-size: 1.1718vw;
+  font-family: 'NotoSans-Light';
+}
 
+/* newOrUsed */
+.newOrUsed{
+  height: 23.486vw;
+  background: linear-gradient(to right, rgba(55,107,253,1) 0%, rgba(55,107,253,1) 15%, rgba(255,134,184,1) 85%, rgba(255,134,184,1) 100%);
+  /* overflow: hidden; */
+  position: relative;
+}
 
+.lanternBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.lantern{
+  width: 14.8437vw;
+  height: 25.3417vw;
+  left: 41.0156vw;
+  position: absolute;
+  top: -6vw;
+  animation-name: lantern;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes lantern {
+  0%{
+    top: -6vw;
+  }
+  100%{
+    top: 0vw;
+  }
+}
+
+.fruits {
+  width: 36.035vw;
+  height: 26.123vw;
+  position: absolute;
+  top: 4vw;
+  left: 0;
+}
+.samsung{
+  width: 25.244vw;
+  height: 29.296vw;
+  position: absolute;
+  left: 47.6vw;
+  top: -5vw;
+}
+.powder {
+  width: 12.695vw;
+  height: 15.136vw;
+  position: absolute;
+  right: 14vw;
+  bottom: 0;
+}
+.liquidLipstick {
+  width: 27.148vw;
+  height: 36.2792vw;
+  position: absolute;
+  top: -3vw;
+  right: 0vw;
+}
+.bg {
+  height: 27vw;
+  width: 56vw;
+  position: absolute;
+  right: 0;
+  top: -1vw;
+}
+.newOrUsed h2{
+  position: absolute;
+  margin-left: 4.15vw;
+  margin-top: 2.73vw;
+  line-height: 1;
+  font-size: 2.9296vw;
+  font-family: 'NotoSans-ExtraBold';
+  color: white;
+}
+.newOrUsed h2 span{
+  font-family: 'NotoSans-Light';
+  font-size: 1.757vw;
+}
 /* MOBILE */
 /* MOBILE */
 /* MOBILE */

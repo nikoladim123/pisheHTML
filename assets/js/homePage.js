@@ -198,11 +198,11 @@ rightCarArrowBox[0].addEventListener('click',()=>{
 var mainSlidMod = 100;
 function mainSlidFun() {
   if (mainSlidMod % 2 === 0) {
-    mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%9 +'.jpg';
+    mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
     mainCarImage[0].style.opacity = '0';
     mainCarImage[1].style.opacity = '1';
   }else{
-    mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%9 +'.jpg';
+    mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
     mainCarImage[0].style.opacity = '1';
     mainCarImage[1].style.opacity = '0';
   }
@@ -219,3 +219,65 @@ function mainSlidBackBut() {
 setInterval(function () {
   mainSlidFun();
 }, 3000);
+
+// test
+// test
+// test
+function textAnimMainSlider() {
+  var text = document.getElementById('text');
+  var newDom = '';
+  var animationDelay = 100;
+
+  for(let i = 0; i < text.innerText.length; i++)
+  {
+      newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+  }
+
+  text.innerHTML = newDom;
+  var length = text.children.length;
+
+  for(let i = 0; i < length; i++)
+  {
+      text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+  }
+
+  // test 1
+  var textOne = document.getElementById('textOne');
+  var newDom = '';
+  var animationDelay = 40;
+
+  for(let i = 0; i < textOne.innerText.length; i++)
+  {
+      newDom += '<span class="char">' + (textOne.innerText[i] == ' ' ? '&nbsp;' : textOne.innerText[i])+ '</span>';
+  }
+
+  textOne.innerHTML = newDom;
+  var length = textOne.children.length;
+
+  for(let i = 0; i < length; i++)
+  {
+      textOne.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+  }
+
+  // testTwo
+  var textTwo = document.getElementById('textTwo');
+  var newDom = '';
+  var animationDelay = 35;
+
+  for(let i = 0; i < textTwo.innerText.length; i++)
+  {
+      newDom += '<span class="char">' + (textTwo.innerText[i] == ' ' ? '&nbsp;' : textTwo.innerText[i])+ '</span>';
+  }
+
+  textTwo.innerHTML = newDom;
+  var length = textTwo.children.length;
+
+  for(let i = 0; i < length; i++)
+  {
+      textTwo.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+  }
+
+  document.getElementsByClassName('center')[0].style.opacity ='1';
+}
+
+window.onload = textAnimMainSlider();
