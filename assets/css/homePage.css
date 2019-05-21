@@ -361,52 +361,20 @@ main{
   /* background: linear-gradient(to bottom, rgba(216,213,228,0.97) 0%, rgba(247,247,247,0.99) 60%, rgba(247,247,247,1) 100%); */
 }
 .mainCarouselContainer h1{
+  transition: 0.5s;
   color: white;
   font-family: 'NotoSans-Bold';
   font-size: 2.9282vw;
   position: relative;
-  margin-top: 6.149vw;
+  margin-top: 7vw;
   margin-left: 2.342vw;
-  display: inline;
 }
-.mainCarouselContainer h2{
-  display: inline;
-  color: white;
+.mainCarouselContainer span{
   font-size: 1.7569vw;
   font-family: 'NotoSans-regular';
   font-weight: 100;
 }
-/* main h1 span{
-  font-size: 1.7569vw;
-  font-family: 'NotoSans-regular';
-  font-weight: 100;
-} */
-/* test */
-.center{
-  position: absolute;
-    /* border: 5px solid red; */
-    width: 100%;
-    height: 10vw;
-    padding-top: 5vw;
-    opacity: 0;
-}
 
-.char{
-    animation: an 1s ease-out 1 both;
-    display: inline-block;
-}
-
-@keyframes an{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
-}
-/* test end*/
 
 .container{
   padding-top: 1.1713vw;
@@ -787,7 +755,7 @@ main{
 }
 /* truck and other icons */
 .flexIcons{
-  margin-top: 1.4648vw;
+  margin-top: 0.4648vw;
   display: flex;
   justify-content: center;
 }
@@ -799,6 +767,7 @@ main{
   font-size: 0.8789vw;
   text-align: center;
   font-family: 'NotoSans-Light';
+  margin: 0;
 }
 /* whatIsLorem */
 .whatIsLorem{
