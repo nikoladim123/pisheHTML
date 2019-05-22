@@ -1121,6 +1121,7 @@ main{
   position: absolute;
   height: 100%;
   right: -1vw;
+  pointer-events: none;
 }
 
 /* anotherLoremIpsumSeciton */
