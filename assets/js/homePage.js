@@ -241,6 +241,73 @@ function hOneFunHide() {
   hOne.style.opacity = '0';
 }
 
+// car Two
+// car Two
+// car Two
+var carTwoPosition = 0;
+var carMoving = document.getElementsByClassName('carMoving');
+var LeftCarTwoArrow = document.getElementsByClassName('LeftCarTwoArrow');
+var rightCarTwoArrow = document.getElementsByClassName('rightCarTwoArrow');
+
+
+rightCarTwoArrow[0].addEventListener('click',()=>{
+  if(carTwoPosition > -(7*30)){
+    carTwoMoveLeft();
+  }
+});
+
+LeftCarTwoArrow[0].addEventListener('click',()=>{
+  if(carTwoPosition < 0){
+    carTwoMoveRight();
+  }
+});
+
+function carTwoMoveLeft() {
+  carTwoPosition-=30;
+  carMoving[0].style.left = carTwoPosition + 'vw';
+}
+
+function carTwoMoveRight() {
+  carTwoPosition+=30;
+  carMoving[0].style.left = carTwoPosition + 'vw';
+}
+
+// car three
+// car three
+// car three
+var carThreePosition = 0;
+var carMoving = document.getElementsByClassName('carMoving');
+var LeftCarTwoArrow = document.getElementsByClassName('LeftCarTwoArrow');
+var rightCarTwoArrow = document.getElementsByClassName('rightCarTwoArrow');
+
+
+rightCarTwoArrow[1].addEventListener('click',()=>{
+  if(carThreePosition > -(5*18.1)){
+    carThreeMoveLeft();
+  }
+});
+
+LeftCarTwoArrow[1].addEventListener('click',()=>{
+  if(carThreePosition < 0){
+    carThreeMoveRight();
+  }
+});
+
+function carThreeMoveLeft() {
+  carThreePosition-=18.1;
+  carMoving[1].style.left = carThreePosition + 'vw';
+}
+
+function carThreeMoveRight() {
+  carThreePosition+=18.1;
+  carMoving[1].style.left = carThreePosition + 'vw';
+}
+
+
+// window scripts
+// window scripts
+// window scripts
 window.onload = ()=>{
   hOneFun();
+  addProdBoxListeners();
 }
