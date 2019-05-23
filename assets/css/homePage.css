@@ -52,6 +52,12 @@ nav{
   left: 4.6vw;
   bottom:  0.5856vw;
 }
+.sellSomething p{
+  transition: 0.3s;
+}
+.sellSomething p:hover{
+  color:rgb(255,196,0);
+}
 
 #sellerOnly{
   transition: 1s;
@@ -232,9 +238,15 @@ input[type="text"]::placeholder {
   margin-right:1.7569vw;
 }
 .cardBox img{
+  transition: 0.3s;
   width: 2.6354vw;
   height: 1.8545vw;
 }
+.cardBox img:hover{
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
 .cardBox p{
   margin: 0;
   font-size: 0.87847vw;
@@ -387,6 +399,7 @@ main{
   display: flex;
   align-items:  flex-start;
   justify-content: center;
+  height: 30vw;
 }
 
 
@@ -753,6 +766,9 @@ main{
   opacity: 1;
   cursor: pointer;
 }
+.nextButton p{
+  user-select: none;
+}
 .leftNextButton{
   right: auto;
   left: 0;
@@ -764,8 +780,13 @@ main{
   justify-content: center;
 }
 .threeIcons{
+  transition: 0.3s;
   margin-left: 5.3vw;
   margin-right: 5.3vw;
+}
+.threeIcons:hover{
+  cursor: pointer;
+  filter: brightness(110%);
 }
 .threeIcons p{
   font-size: 0.8789vw;
@@ -1055,6 +1076,7 @@ main{
 .LeftCarTwoArrow p,.rightCarTwoArrow p{
   transform: scale(1,1.6);
   font-size: 2.5vw;
+  user-select: none;
 }
 
 .LeftCarTwoArrow{
@@ -1164,10 +1186,14 @@ main{
 }
 
 .footerInfo a{
+  transition: 0.3s;
   color: rgb(85,85,85);
   font-size: 0.878vw;
   text-align: center;
   font-family: 'NotoSans-Regular';
+}
+.footerInfo a:hover{
+  color: rgb(255,196,0);
 }
 
 .footerInfo div{
@@ -1190,7 +1216,7 @@ footer{
 /* MOBILE */
 /* MOBILE */
 /* MOBILE */
-@media (orientation:portrait) {
+/* @media (orientation:portrait) {
   .content>.col:nth-child(1){
     display: none;
   }
@@ -1217,4 +1243,4 @@ footer{
   .productPrice{
     font-size: 2.871vw;
   }
-}
+} */
