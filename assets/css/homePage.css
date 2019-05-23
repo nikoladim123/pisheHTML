@@ -575,6 +575,13 @@ main{
   align-items: center;
   position: relative;
 }
+.imgShareLikeCallDivIcon:hover{
+cursor: pointer;
+
+}
+.imgShareLikeCallDivIcon:hover img:nth-child(1){
+  opacity: 1;
+}
 
 .socialMediaDropDown {
   transition: 0.5s;
