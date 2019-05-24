@@ -474,6 +474,7 @@ main{
   transition: 2s;
   transform: rotate(45deg);
   z-index: 1;
+  pointer-events: none;
 }
 .productImageDiv:hover:before{
   top:100%;
