@@ -294,12 +294,12 @@ LeftCarTwoArrow[1].addEventListener('click',()=>{
 });
 
 function carThreeMoveLeft() {
-  carThreePosition-=18.1;
+  carThreePosition-=18.1 *5;
   carMoving[1].style.left = carThreePosition + 'vw';
 }
 
 function carThreeMoveRight() {
-  carThreePosition+=18.1;
+  carThreePosition+=18.1 *5;
   carMoving[1].style.left = carThreePosition + 'vw';
 }
 
