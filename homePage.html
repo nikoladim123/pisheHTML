@@ -26,7 +26,7 @@
 
     <nav>
       <div class="sellSomething">
-        <div class="sellButton">
+        <div class="sellButton mobHide">
           <img src="assets\images\sellSomething.png" alt="">
         </div>
         <a id="sellSomething" href="#"><p>Sell Something</p></a>
@@ -47,7 +47,13 @@
             <option value="boston">Boston</option>
           </select>
           <input class="searchInput" type="text" name="" value="" placeholder="Search for anything">
-          <a class="searchIconAnchor" href="#"><img class="searchIcon" src="assets\images\searchIcon.png" alt=""> </a>
+          <a class="searchIconAnchor" href="#">
+            <picture>
+              <source media="(orientation:landscape)" srcset="assets\images\searchIcon.png">
+              <source media="(orientation:portrait)" srcset="assets\images\searchYellow.png">
+              <img class="searchIcon" src="assets\images\searchIcon.png" alt="">
+            </picture>
+          </a>
         </div>
       </div>
       <div class="logInRegister">
@@ -62,7 +68,7 @@
           <p>&nbsp/&nbsp</p>
           <a id="register" href="#"><p>register</p></a>
         </div>
-        <div class="userIcon">
+        <div class="userIcon mobHide">
           <img src="assets\images\user-icon.png" alt="">
         </div>
       </div>
@@ -71,9 +77,9 @@
     <main>
 
       <div class="container">
+        <p class="feateruedProducts deskHide">Featured Products</p>
 
         <div class="leftSliderBox">
-
           <div class="productBox productBoxOne">
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\productImages\pineapple.jpg" alt="">
@@ -174,7 +180,7 @@
             </div>
           </div>
 
-          <div class="productBox productBoxThree">
+          <div class="productBox ">
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\kids\1.jpg" alt="">
               <div class="imgShareLikeCallDiv">
@@ -343,7 +349,7 @@
             </div>
           </div>
 
-          <div class="productBox productBoxThree">
+          <div class="productBox ">
             <div class="productImageDiv">
               <img class="productImage" src="assets\images\productImages\candy.jpg" alt="">
               <div class="imgShareLikeCallDiv">
@@ -428,10 +434,16 @@
           <img class="lantern" src="assets\images\homePage\newOrUsed\lantern.png" alt="">
         </div>
         <img class="bg" src="assets\images\homePage\newOrUsed\bg.png" alt="">
+        <div class="bgTwoBox">
+          <img class="bgTwo deskHide" src="assets\images\homePage\newOrUsed\bgTwo.png" alt="">
+        </div>
         <img class="fruits" src="assets\images\homePage\newOrUsed\fruits.png" alt="">
         <img class="samsung" src="assets\images\homePage\newOrUsed\samsung.png" alt="">
         <img class="powder" src="assets\images\homePage\newOrUsed\powder.png" alt="">
         <img class="liquidLipstick" src="assets\images\homePage\newOrUsed\liquidLipstick.png" alt="">
+        <div class="liquidLipstickBG deskHide">
+          <div class="liquidNarowWhiteBg"></div>
+        </div>
         <h2>NEW OR USED <br>
         <span>you can sell anything on Pishe</span></h2>
       </section>
@@ -1160,7 +1172,13 @@
               <option value="boston">Boston</option>
             </select>
             <input class="searchInput" type="text" name="" value="" placeholder="Search for anything">
-            <a class="searchIconAnchor" href="#"><img class="searchIcon" src="assets\images\searchIcon.png" alt=""> </a>
+            <a class="searchIconAnchor" href="#">
+              <picture>
+                <source media="(orientation:landscape)" srcset="assets\images\searchIcon.png">
+                <source media="(orientation:portrait)" srcset="assets\images\searchYellow.png">
+                <img class="searchIcon" src="assets\images\searchIcon.png" alt="">
+              </picture>
+            </a>
           </div>
         </div>
         <div class="logInRegister">

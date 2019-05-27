@@ -1251,35 +1251,385 @@ cursor: pointer;
 footer{
   display: block;
 }
-
+.deskHide{
+  display: none;
+}
 /* MOBILE */
 /* MOBILE */
 /* MOBILE */
-/* @media (orientation:portrait) {
-  .content>.col:nth-child(1){
+@media (orientation:portrait) {
+  .deskHide{
+    display: block;
+  }
+  .mobHide{
     display: none;
   }
-  .content{
-    grid-template-columns:auto auto;
+  nav{
+    height: 53vw;
   }
-  .breadCrumbs{
-    font-size: 2.5vw;
+  .sellSomething{
+    bottom: auto;
+    top: 7.187vw;
+  }
+  .sellSomething p{
+    font-size: 3.75vw;
+    margin: 0;
   }
 
-  .changeLocation{
-    font-size: 2.47vw;
+  .logInRegister{
+    top:3.187vw;
+    bottom: auto;
   }
-  .productBox{
-    width: 40vw;
-    margin-top: 4vw;
+  .logreg{
+    font-size: 3.75vw;
+  }
+  .cardBox{
+    margin-right: 12.75vw;
+    position: relative;
+    top: -2vw;
+  }
+  .cardBox p{
+    font-size: 3.75vw;
+  }
+  .cardBox img {
+    transition: 0.3s;
+    width: 7.6354vw;
+    height: 4.8545vw;
+  }
+
+  .logoAndSocialMedia {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.5vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    margin: auto;
+    height: 6.875vw;
+    width: 50.625vw;
+  }
+  .socialMediaDiv{
+    height: auto;
+  }
+  .fb-icon{
+    width: 2.8125vw;
+    height: 4.375vw;
+  }
+  .twitter-icon{
+    width: 4.6875vw;
+    height: 4.375vw;
+  }
+  .instagram-icon{
+    width: 4.6875vw;
+    height: 4.375vw;
+  }
+  .linkedIn-icon{
+    width: 4.6875vw;
+    height: 4.375vw;
+  }
+  .socialMediaDiv img{
+    margin: 2.8vw;
+  }
+
+  .searchBox{
+    height: 11.5625vw;
+    width: 89.0625vw;
+    background-color: white;
+    border:0.9375vw solid rgb(204,204,204);
+    border-radius: 10vw;
+  }
+  .locationIcon {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 4.171vw;
+    height: 5.757vw;
+  }
+  .selectCountry{
+    padding-right: 1vw;
+    font-size: 4.2vw;
+    background: white;
+    border-right: 3px solid rgb(204,204,204);
+    height: 66%;
+  }
+  .searchInput{
+    height: 95%;
+    background: white;
+    font-size: 4.8789vw;
+    width: 51.7826vw;
+  }
+  input[type="text"]::placeholder {
+      color: black;
+      font-size: 0.8789vw;
+      opacity: 0;
+  }
+  .searchIcon {
+    width: 1.953vw;
+    height: 1.953vw;
+    margin-right: 0;
+    margin-top: 0.3vw;
+    float: none;
+    background: rgb(101,115,255);
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    padding: 1.8vw;
+  }
+
+  /* cars */
+  main{
+    position: relative;
+  }
+  .container{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainCarouselContainer{
+    order: 1;
+    width: 100%;
+    height: 53.86vw;
+  }
+  .mainCarouselContainer h1{
+    font-size: 4.9282vw;
+  }
+  .mainCarouselContainer span{
+    font-size: 3.7569vw;
+  }
+
+  .feateruedProducts{
+    position: absolute;
+    top: 148vw;
+    font-family: 'NotoSans-ExtraBold';
+    font-size: 5vw;
+    margin: 0;
+  }
+  .leftSliderBox{
+    order: 2;
+    margin-top: 103vw;
+    width: 70vw;
+    min-height: 127vw;
+  }
+  .imgShareLikeCallDivIcon{
+    width: 9.2482vw;
+    height: 9.2971vw;
+    margin-left: 1.195vw;
+    margin-right: 1.195vw;
+  }
+  .share-icon {
+    width: 7.248vw;
+    height: 7.1994vw;
+  }
+  .call-icon {
+    width: 5.466vw;
+    height: 5.466vw;
+  }
+  .love {
+    width: 6.71vw;
+    height: 6.564vw;
+  }
+
+  .leftSliderBox>div:nth-child(1){
+    width: 90%;
+    left: 5%;
+  }
+  .leftSliderBox>div:nth-child(2){
+    width: 95%;
+    left: 2.5%;
+    top: 2.5vw;
+  }
+  .leftSliderBox>div:nth-child(3){
+    width: 100%;
+    top: 5vw;
   }
   .productImage{
-    height: 52vw;
+    min-height: 91vw;
+  }
+
+  .rightSliderBox{
+    min-height: 127vw;
+    order: 3;
+    width: 70vw;
+  }
+  .rightSliderBox>div:nth-child(1){
+    width: 90%;
+    left: 5%;
+  }
+  .rightSliderBox>div:nth-child(2){
+    width: 95%;
+    left: 2.5%;
+    top: 2.5vw;
+  }
+  .rightSliderBox>div:nth-child(3){
+    width: 100%;
+    top: 5vw;
+  }
+  .nextButton{
+    width: 13vw;
+    height: 13vw;
+    top: 50vw;
+    font-size: 4vw;
   }
   .itemDescriptionText{
-    font-size: 2.77vw;
+    font-size: 4vw;
   }
   .productPrice{
-    font-size: 2.871vw;
+    font-size: 4.171vw;
   }
-} */
+  .tag {
+    font-size: 2.77vw;
+    padding: 1vw;
+  }
+
+  .flexIcons {
+    margin-top: 0.4648vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 57vw;
+    margin-left: auto;
+    width: 100%;
+  }
+  .threeIcons img{
+    transform: scale(1.6);
+  }
+  .threeIcons {
+    transition: 0.3s;
+    margin-left: 5.3vw;
+    display: flex;
+    margin-right: 5.3vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .threeIcons p{
+    margin: 1.2vw;
+    font-size: 2.87vw;
+  }
+
+  .productBoxThree .productImage{
+    min-height: 21.48vw;
+  }
+  .thirdCarouselSection{
+    height: auto;
+  }
+  .whatIsLorem{
+    position: absolute;
+    top: 74vw;
+    width: 100%;
+    background: white;
+  }
+  .whatIsLorem h2{
+    font-size: 7.3437vw;
+  }
+  .whatIsLorem p {
+    margin: 0;
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: 'NotoSans-Light';
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  /* new used mob */
+  .newOrUsed {
+    height: 65.486vw;
+    background: linear-gradient(to right, rgba(55,107,253,1) 28%, rgba(55,107,253,1) 15%, rgba(255,134,184,1) 182%, rgba(255,134,184,1) 100%);
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  .fruits {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 11vw;
+    left: 0;
+  }
+
+  .newOrUsed{
+    margin-bottom: 200vw
+  }
+  .newOrUsed h2 {
+    margin-left: 10.15vw;
+    margin-top: 5.73vw;
+    line-height: 0.6;
+    font-size: 7.9296vw;
+  }
+  .newOrUsed h2 span {
+    font-family: 'NotoSans-Light';
+    font-size: 4vw;
+  }
+
+  .bg {
+    height: 77vw;
+    width: 123%;
+    position: absolute;
+    right: 0;
+    top: 80vw;
+  }
+
+  .lanternBox{
+    top: 83vw;
+  }
+
+  .lantern {
+    width: 42.8437vw;
+    height: 75.3417vw;
+    left: 8vw;
+    z-index: 1;
+  }
+  .bgTwoBox{
+    width: 100%;
+    top: 80vw;
+    position: absolute;
+    overflow: hidden;
+  }
+  .bgTwo {
+    height: 77vw;
+    position: relative;
+    z-index: 2;
+    left: 12vw;
+  }
+  .samsung {
+    width: 66.244vw;
+    height: 81.296vw;
+    position: absolute;
+    left: 29.6vw;
+    top: 68vw;
+    z-index: 3;
+  }
+  .liquidLipstickBG {
+    overflow: hidden;
+    width: 100%;
+    height: 88vw;
+    top: 156vw;
+    position: absolute;
+    background-color: rgb(214,152,216);
+  }
+  .liquidNarowWhiteBg {
+    width: 100%;
+    height: 7vw;
+    background: white;
+    top: 85vw;
+    transform: skewY(-2deg);
+    position: absolute;
+  }
+  .liquidLipstick {
+    width: 96.148vw;
+    height: 123.2792vw;
+    position: absolute;
+    top: 147vw;
+    right: 0vw;
+    z-index: 1;
+  }
+  .powder {
+    width: 45.695vw;
+    height: 55.136vw;
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    top: 183vw;
+    left: 6vw;
+  }
+}
