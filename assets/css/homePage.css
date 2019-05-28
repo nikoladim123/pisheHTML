@@ -1632,4 +1632,99 @@ footer{
     top: 183vw;
     left: 6vw;
   }
+  /* pishe work */
+  .pisheWork{
+    width: 100%;
+    left: auto;
+    margin-left: auto;
+    height: 80vw;
+  }
+  .pisheWork h2{
+    font-size: 6.341vw;
+  }
+  .pisheWorkText {
+    font-size: 3.6707vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+  }
+  .createOnlineStore {
+    width: 61.39vw;
+    height: 8.2926vw;
+    border-radius: 3vw;
+    left: -31.195vw;
+  }
+  .createOnlineStore p{
+    font-size: 4.17vw;
+  }
+  .pisheWork h3{
+    font-size: 4.4634vw;
+  }
+
+  /*  car two*/
+  .LeftCarTwoArrow, .rightCarTwoArrow{
+    width: 10vw;
+    height: 10vw;
+    top: calc(50% - 8vw);
+  }
+  .LeftCarTwoArrow p, .rightCarTwoArrow p{
+    font-size: 6.5vw;
+  }
+  .carItemBox{
+    width: 89vw;
+  }
+  .carItemBox p{
+    font-size: 3.4634vw;
+  }
+  /* car three */
+  .featuredProducts{
+    text-align: center;
+  }
+  .productBox{
+    width: 29vw;
+  }
+  .productImage{
+    height: 37vw;
+  }
+  /* features stores */
+  .featuredStores {
+    height: 113.317vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featuredStoresImagesBox {
+    width: 80.39vw;
+    height: 49.39vw;
+  }
+  .lightBG{
+    width: 100%;
+  }
+  /* anotherLoremIpsumSeciton */
+  .anotherLoremIpsumSeciton h2{
+    font-size: 7.341vw;
+  }
+  .anotherLoremIpsumSeciton p{
+    font-size: 1.57vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  /* footer */
+  .footerInfo{
+    flex-direction: column;
+  }
+  .footerInfo div{
+    margin-top: 5vw;
+  }
+  .footerInfo h2{
+    font-size: 4.463vw;
+  }
+  .sellonipishe{
+    height: auto;
+  }
+  .footerInfo a{
+    font-size: 1.878vw;
+  }
+  .FollowIPishe img {
+    width: 49.439vw;
+    height: 52.4vw;
+  }
 }
