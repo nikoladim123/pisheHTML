@@ -195,11 +195,16 @@ rightCarArrowBox[0].addEventListener('click',()=>{
 });
 
 
+
+var sliderPages = ['#flowers','crafts.html','#comercenone','cosmetics.html','#lamps','fabrics.html','cars.html','watches.html','decore.html','#doctors','kitchen.html','0']
 var mainSlidMod = 100;
 function mainSlidFun() {
   if (mainSlidMod % 2 === 0) {
     hOneFunHide()
     mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
+    mainCarImage[1].addEventListener('click',()=>{
+      window.location.href = sliderPages[mainSlidMod%11]
+    });
     setTimeout(function () {
       mainCarImage[0].style.opacity = '0';
       mainCarImage[1].style.opacity = '1';
@@ -207,6 +212,9 @@ function mainSlidFun() {
     }, 300);
   }else{
     mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
+    mainCarImage[0].addEventListener('click',()=>{
+      window.location.href = sliderPages[mainSlidMod%11]
+    });
     hOneFunHide()
     setTimeout(function () {
       hOneFun();
@@ -273,7 +281,7 @@ function carTwoMoveLeft() {
     }
   }
 
-}
+};
 
 function carTwoMoveRight() {
   console.log(123);
@@ -339,3 +347,12 @@ window.onload = ()=>{
   hOneFun();
   addProdBoxListeners();
 }
+
+
+// initialize page
+mainCarImage[1].addEventListener('click',()=>{
+  window.location.href = sliderPages[0]
+});
+mainCarImage[0].addEventListener('click',()=>{
+  window.location.href = sliderPages[1]
+});
