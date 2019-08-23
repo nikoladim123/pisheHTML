@@ -421,6 +421,9 @@ main{
 .mainCarouselContainer img:nth-child(2){
   opacity: 0;
 }
+.mainCarouselContainer img:hover{
+  cursor: pointer;
+}
 .leftCarArrowBox,.rightCarArrowBox{
   transition: 0.3s;
   width: 4vw;
