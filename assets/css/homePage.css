@@ -384,6 +384,7 @@ main{
   position: relative;
   margin-top: 7vw;
   margin-left: 2.342vw;
+  pointer-events: none;
 }
 .mainCarouselContainer span{
   font-size: 1.7569vw;
