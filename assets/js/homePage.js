@@ -196,14 +196,17 @@ rightCarArrowBox[0].addEventListener('click',()=>{
 
 
 
-var sliderPages = ['#flowers','crafts.html','#comercenone','cosmetics.html','#lamps','fabrics.html','cars.html','watches.html','decore.html','#doctors','kitchen.html','0']
-var mainSlidMod = 100;
+var sliderPages = ['#crafts','#crafts','#commerce','cosmetics.html','#lamps','fabrics.html','cars.html','watches.html','decore.html','#doctors','kitchen.html','#flowers','bikes.html']
+var mainSlidMod = 112;
 function mainSlidFun() {
   if (mainSlidMod % 2 === 0) {
     hOneFunHide()
-    mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
+    mainCarImage[1].src = 'assets/images/homePage/'+ mainSlidMod%12 +'.jpg';
+
+      console.log(mainSlidMod%12);
+      console.log(sliderPages[mainSlidMod%12]);
     mainCarImage[1].addEventListener('click',()=>{
-      window.location.href = sliderPages[mainSlidMod%11]
+      window.location.href = sliderPages[mainSlidMod%12]
     });
     setTimeout(function () {
       mainCarImage[0].style.opacity = '0';
@@ -211,9 +214,12 @@ function mainSlidFun() {
       hOneFun();
     }, 300);
   }else{
-    mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%11 +'.jpg';
+    mainCarImage[0].src = 'assets/images/homePage/'+ mainSlidMod%12 +'.jpg';
+
+      console.log(mainSlidMod%13);
+      console.log(sliderPages[mainSlidMod%12]);
     mainCarImage[0].addEventListener('click',()=>{
-      window.location.href = sliderPages[mainSlidMod%11]
+      window.location.href = sliderPages[mainSlidMod%12]
     });
     hOneFunHide()
     setTimeout(function () {
